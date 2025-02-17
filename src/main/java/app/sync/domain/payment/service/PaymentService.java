@@ -73,7 +73,7 @@ public class PaymentService {
             payment.processPayment(orderProducts, paymentDto.transactionKey());
         } else {
             if (paymentClient.payCancel(paymentDto.transactionKey(), AppStatic.PAYMENT_COMPLETE_FAILED_MESSAGE).isSuccess()) {
-                payment.processPaymentCancel(orderProducts, PaymentStatusType.FAILED.getValue());
+                payment.processPaymentCancel(PaymentStatusType.FAILED.getValue());
             } else {
                 throw new ServerException(ServerExceptionType.PAYMENT_CANCEL_FAILED);
             }
