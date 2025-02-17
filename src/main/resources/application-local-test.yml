@@ -1,0 +1,27 @@
+spring:
+  sql:
+    init:
+      mode: never
+  jpa:
+    generate-ddl: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        order_inserts: true
+        order_updates: true
+        auto_quote_keyword: true
+        jdbc.batch_size: 10000
+        dialect: org.hibernate.dialect.MariaDBDialect
+  datasource:
+    url: jdbc:h2:mem:~/2502_01a_db;Mode=MariaDB
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+logging:
+  level:
+    org.hibernate.SQL: debug

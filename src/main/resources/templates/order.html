@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link th:href="@{/style/app.css}" rel="stylesheet">
+  <link th:href="@{/style/order.css}" rel="stylesheet">
+  <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.min.js}"></script>
+  <script th:src="@{/script/app.js}" charset="utf-8" defer></script>
+  <script th:src="@{/script/utils.js}" charset="utf-8" defer></script>
+  <script th:src="@{/script/order.js}" charset="utf-8" defer></script>
+</head>
+
+<body>
+<div class="page">
+  <div class="header">
+    <div class="header-title">
+      <p class="text">주문</p>
+    </div>
+    <div class="header-menu">
+      <a class="link button" th:href="@{/orders}">주문</a>
+      <a class="link button" th:href="@{/cart}">장바구니</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="order">
+      <div class="order-info">
+        <div class="title">
+          <span class="text">주문 정보</span>
+        </div>
+        <div class="order-id">
+          <span class="text-label">주문 번호</span>
+          <span class="text"></span>
+        </div>
+        <div class="order-amount">
+          <span class="text-label">주문 금액</span>
+          <span class="text"></span>
+        </div>
+        <div class="order-status">
+          <span class="text-label">주문 상태</span>
+          <span class="text"></span>
+        </div>
+      </div>
+    </div>
+    <div class="order-payment">
+      <div class="order-payment-info">
+        <div class="title">
+          <span class="text">결제 정보</span>
+        </div>
+        <div class="order-payment-id">
+          <span class="text-label">결제 번호</span>
+          <span class="text"></span>
+        </div>
+        <div class="order-payment-amount">
+          <span class="text-label">결제 금액</span>
+          <span class="text"></span>
+        </div>
+        <div class="order-payment-status">
+          <span class="text-label">결제 상태</span>
+          <span class="text"></span>
+        </div>
+      </div>
+    </div>
+    <div class="order-payment-cancel">
+      <form class="form">
+        <div class="form-item">
+          <label class="label">
+            <select class="select">
+              <option class="select-option" value="">선택</option>
+              <option class="select-option" value="상품 불량">상품 불량</option>
+              <option class="select-option" value="상품 오배송">상품 오배송</option>
+            </select>
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="order-payment-cancel-action">
+      <button class="button">
+        <span class="text">
+          결제 취소하기
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

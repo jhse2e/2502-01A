@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.order {
+  display: flex;
+  padding: 0 8px 16px 8px;
+  border-bottom: 1px solid var(--gray-300);
+}
+.order-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.order-info .title {
+  padding: 0 0 4px 0;
+}
+.order-info .title .text {
+  font-size: 16px;
+  font-weight: 600;
+}
+.order-info .order-id,
+.order-info .order-amount,
+.order-info .order-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-payment {
+  display: flex;
+  padding: 16px 8px 16px 8px;
+  border-bottom: 1px solid var(--gray-300);
+}
+.order-payment-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.order-payment-info .title {
+  padding: 0 0 4px 0;
+}
+.order-payment-info .title .text {
+  font-size: 16px;
+  font-weight: 600;
+}
+.order-payment-info .order-payment-id,
+.order-payment-info .order-payment-amount,
+.order-payment-info .order-payment-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-payment-cancel {
+  padding: 16px 8px 16px 8px;
+}
+.order-payment-cancel-action {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 8px 16px 8px;
+  border-top: 1px solid var(--gray-300);
+  border-bottom: 1px solid var(--gray-300);
+}

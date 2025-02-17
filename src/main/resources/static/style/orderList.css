@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-table {
+  width: 100%;
+}
+.order-info-label {
+  width: 20%;
+}
+.order-product-info-label {
+  width: 50%;
+}
+.order-product-price-info-label {
+  width: 15%;
+}
+.order-payment-info-label {
+  width: 15%;
+}
+.order-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.order-info .order-id {
+  font-weight: 600;
+}
+.order-product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+}
+.order-product-info .order-product-name {
+  font-weight: 600;
+}
+.order-product-price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order-payment-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.order-payment-info .order-payment-amount {
+  font-weight: 600;
+}

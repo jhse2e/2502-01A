@@ -1,0 +1,42 @@
+spring:
+  sql:
+    init:
+      mode: always
+      continue-on-error: false
+      # schema-locations: classpath:sql/schema.sql
+      # data-locations: classpath:sql/schema-data.sql
+  jpa:
+    generate-ddl: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        order_inserts: true
+        order_updates: true
+        auto_quote_keyword: true
+        jdbc.batch_size: 10000
+        dialect: org.hibernate.dialect.MariaDBDialect
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/2502_01a_db
+    username: root
+    password: dreamy
+    driver-class-name: org.mariadb.jdbc.Driver
+  web:
+    resources:
+      cache.period: 0
+      static-locations: file:src/main/resources/static
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates
+    suffix: .html
+
+logging:
+  level:
+    org.hibernate.SQL: debug

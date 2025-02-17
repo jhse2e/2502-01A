@@ -1,0 +1,12 @@
+package app.sync.domain.payment.dto.response;
+
+import java.io.Serializable;
+
+/**
+ * @param id 결제 ID
+ */
+public record PaymentCompleteResultDto(
+    String id
+) implements Serializable {
+    // ...
+}

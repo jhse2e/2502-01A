@@ -1,0 +1,5 @@
+1. 실행 프로파일 설정
+: Edit Configurations -> Modify options -> Add VM options -> -Dspring.profiles.active=local 입력
+
+2. 토스페이먼츠, 구글 메일 변수 설정
+: application-secret.yml

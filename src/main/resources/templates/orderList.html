@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link th:href="@{/style/app.css}" rel="stylesheet">
+  <link th:href="@{/style/orderList.css}" rel="stylesheet">
+  <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js}"></script>
+  <script th:src="@{/script/app.js}" charset="utf-8" defer></script>
+  <script th:src="@{/script/utils.js}" charset="utf-8" defer></script>
+  <script th:src="@{/script/orderList.js}" charset="utf-8" defer></script>
+</head>
+
+<body>
+<div class="page">
+  <div class="header">
+    <div class="header-title">
+      <p class="text">주문 목록</p>
+    </div>
+    <div class="header-menu">
+      <a class="link button" th:href="@{/orders}">주문</a>
+      <a class="link button" th:href="@{/cart}">장바구니</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="order">
+      <table class="table order-table">
+        <thead class="table-head">
+          <tr class="table-row">
+            <th class="table-header order-info-label">주문 번호</th>
+            <th class="table-header order-product-info-label">상품</th>
+            <th class="table-header order-product-price-info-label">상품 가격</th>
+            <th class="table-header order-payment-info-label">총 결제 금액</th>
+          </tr>
+        </thead>
+<!--        <tbody class="table-body">-->
+<!--          <tr class="table-row">-->
+<!--            <td class="table-data" rowspan="1">-->
+<!--              <div class="order-info">-->
+<!--                <span class="order-id">123456</span>-->
+<!--                <span class="order-status">결제 확인 중</span>-->
+<!--              </div>-->
+<!--            </td>-->
+<!--            <td class="table-data" rowspan="1">-->
+<!--              <div class="order-product-info">-->
+<!--                <span class="order-product-name">신발</span>-->
+<!--                <span class="order-product-quantity">수량: 1</span>-->
+<!--              </div>-->
+<!--            </td>-->
+<!--            <td class="table-data" rowspan="1">-->
+<!--              <div class="order-product-price-info">-->
+<!--                <span class="order-product-price">10,000원</span>-->
+<!--              </div>-->
+<!--            </td>-->
+<!--            <td class="table-data" rowspan="1">-->
+<!--              <div class="order-payment-info">-->
+<!--                <span class="order-payment-amount">10,000원</span>-->
+<!--                <a class="link" href="">[더보기]</a>-->
+<!--              </div>-->
+<!--            </td>-->
+<!--          </tr>-->
+<!--        </tbody>-->
+<!--        <tbody class="table-body">-->
+<!--          <tr class="table-row">-->
+<!--            <td class="table-data" rowspan="2">-->
+<!--              <div class="order-info">-->
+<!--                <span class="order-id">123456</span>-->
+<!--                <span class="order-date-time">결제 확인 중</span>-->
+<!--              </div>-->
+<!--            </td>-->
+<!--            <td class="table-data" rowspan="1">-->
+<!--              <div class="order-product-info">-->
+<!--                <span class="order-product-name">신발</span>-->
+<!--                <span class="order-product-quantity">수량: 1</span>-->
+<!--              </div>-->
+<!--            </td>-->
+<!--            <td class="table-data" rowspan="1">-->
+<!--              <div class="order-product-price-info">-->
+<!--                <span class="order-product-price">10,000원</span>-->
+<!--              </div>-->
+<!--            </td>-->
+<!--            <td class="table-data" rowspan="2">-->
+<!--              <div class="order-payment-info">-->
+<!--                <span class="order-payment-amount">20,000원</span>-->
+<!--                <a class="link" href="">[더보기]</a>-->
+<!--              </div>-->
+<!--            </td>-->
+<!--          </tr>-->
+<!--          <tr class="table-row">-->
+<!--            <td class="table-data" rowspan="1">-->
+<!--              <div class="order-product-info">-->
+<!--                <span class="order-product-name">신발</span>-->
+<!--                <span class="order-product-quantity">수량: 1</span>-->
+<!--              </div>-->
+<!--            </td>-->
+<!--            <td class="table-data" rowspan="1">-->
+<!--              <div class="order-product-price-info">-->
+<!--                <span class="order-product-price">10,000원</span>-->
+<!--              </div>-->
+<!--            </td>-->
+<!--          </tr>-->
+<!--        </tbody>-->
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

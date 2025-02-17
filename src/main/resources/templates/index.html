@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link th:href="@{/style/app.css}" rel="stylesheet">
+  <link th:href="@{/style/index.css}" rel="stylesheet">
+  <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.min.js}"></script>
+  <script th:src="@{/script/app.js}" charset="utf-8" defer></script>
+  <script th:src="@{/script/index.js}" charset="utf-8" defer></script>
+</head>
+
+<body>
+<div class="page">
+  <div class="header">
+    <div class="header-title">
+      <p class="text">로그인</p>
+    </div>
+  </div>
+  <div class="content">
+    <div class="user-login">
+      <form class="user-login-form">
+        <label>
+          <input class="input user-email-input" type="text" placeholder="이메일" value="test1@test.com"/>
+        </label>
+        <label>
+          <input class="input user-password-input" type="password" placeholder="비밀번호" value="12345"/>
+        </label>
+      </form>
+    </div>
+    <div class="user-login-action">
+      <button class="button user-login-button" type="button">
+        <span class="text">
+          로그인
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

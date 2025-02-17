@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link th:href="@{/style/app.css}" rel="stylesheet">
+  <link th:href="@{/style/cart.css}" rel="stylesheet">
+  <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.min.js}"></script>
+  <script th:src="@{/script/app.js}" charset="utf-8" defer></script>
+  <script th:src="@{/script/utils.js}" charset="utf-8" defer></script>
+  <script th:src="@{/script/cart.js}" charset="utf-8" defer></script>
+  <script th:src="@{https://js.tosspayments.com/v1/payment-widget}" charset="utf-8" defer></script>
+</head>
+
+<body>
+<div class="page">
+  <div class="header">
+    <div class="header-title">
+      <p class="text">장바구니</p>
+    </div>
+    <div class="header-menu">
+      <a class="link button" th:href="@{/orders}">주문</a>
+      <a class="link button" th:href="@{/cart}">장바구니</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="cart">
+      <ul class="cart-product-item-list">
+<!--        <li class="cart-product-item" data-product-id="1">-->
+<!--          <div class="cart-product-info">-->
+<!--            <span class="text cart-product-name">신발</span>-->
+<!--            <span class="text cart-product-price">10,000원</span>-->
+<!--          </div>-->
+<!--          <div class="cart-product-quantity-info">-->
+<!--            <div class="cart-product-quantity-choice">-->
+<!--              <button class="button cart-product-quantity-minus">-->
+<!--                <span class="text">&minus;</span>-->
+<!--              </button>-->
+<!--              <span class="text cart-product-quantity">0</span>-->
+<!--              <button class="button cart-product-quantity-plus">-->
+<!--                <span class="text">&plus;</span>-->
+<!--              </button>-->
+<!--            </div>-->
+<!--            <div class="cart-product-quantity-choice-result">-->
+<!--              <span class="text">0원</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </li>-->
+      </ul>
+    </div>
+    <div class="cart-product-order">
+      <form class="form">
+        <div class="form-item">
+          <label class="label">
+            <select class="select">
+              <option class="select-option" value="">선택</option>
+            </select>
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="cart-product-order-action">
+      <button class="button">
+        <span class="text">
+          0원 결제하기
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.user-login {
+  padding: 0 8px 16px 8px;
+}
+.user-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.user-login-action {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 8px 16px 8px;
+  border-top: 1px solid var(--gray-300);
+  border-bottom: 1px solid var(--gray-300);
+}
